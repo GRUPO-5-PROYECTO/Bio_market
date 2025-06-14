@@ -1,0 +1,120 @@
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    background-color:antiquewhite;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color:burlywood;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color:darkslategrey;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color:olive;
+}
+
+.submenu0,
+.submenu1,
+.submenu2 {
+    display: none;
+    position: absolute;
+    background-color:darkkhaki;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.submenu0 {
+    top: 100%;
+    left: 0;
+}
+
+.submenu1 {
+    top: 100%;
+    left: 0;
+}
+
+.submenu0 li a,
+.submenu1 li a,
+.submenu2 li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.menu li:hover > .submenu0 {
+    display: block;
+}
+
+.menu li:hover > .submenu1 {
+    display: block;
+}
+
+.menu li:hover > .submenu2 {
+    display: block;
+}
+
+.imagen-fondo {
+    background-image: url(/PROYECTO_BIOMARKET/PAGINA_PRINCIPAL/imagen/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fondo-contenido {
+    position: relative;
+    z-index: 2;
+}
+
+.titulo {
+    color:azure;
+    text-align: center;
+}
+
+.buscador input[type="text"] {
+    width: 280px;
+    height: 35px;
+    font-size: 16px;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.buscador button {
+    width: 40px;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
